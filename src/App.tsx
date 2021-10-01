@@ -82,7 +82,7 @@ function App() {
       <div className="container">
         <div className="reservation-container">
           <div>
-            <h5 className="reservation-header">Reservations</h5>
+            <h5 className="reservation-header">React Redux list managment example: sep14</h5>
             <div className="reservation-cards-container">
               {reservations.map((name, index) => {
                 return <ReservationCard name={name} index={index} />;
@@ -118,16 +118,17 @@ function App() {
             <button onClick={handleAddCommentTexts}>Add CommentText</button>
           </div>
         </div>
-        <div className="appUser-container">
+
+        <div className="appuser-container">
           <div>
-            <h5 className="appUser-header">AppUsers</h5>
-            <div className="appUser-cards-container">
-              {appUsers.map((id, name, index) => {
-                return <AppUserCard id={id} name={name} index={index}/>;
+            <h5 className="appuser-header">AppUsers</h5>
+            <div className="appuser-cards-container">
+              {appUsers.map((name, index) => {
+                return <AppUserCard name={name} index={index} />;
               })}
             </div>
           </div>
-          <div className="appUser-input-container">
+          <div className="appuser-input-container">
             <input
               value={appUserInput}
               onChange={(e) => {
@@ -137,6 +138,8 @@ function App() {
             <button onClick={handleAddAppUsers}>Add AppUser</button>
           </div>
         </div>
+
+
         <div className="article-container">
           <div>
             <h5 className="article-header">Articles</h5>
@@ -147,7 +150,7 @@ function App() {
             </div>
           </div>
 
-
+{/*
           <div className="app-user-list-container">
           {appUserLists.map((appUserList: { id: React.Key | null | undefined; name: string; ulist: string[]; }) => { 
             return (
@@ -157,11 +160,11 @@ function App() {
                 ulist={appUserList.ulist}
                 key={appUserList.id}
               />
-            );
+            );.tsx file commentTextSlice
           })}
         </div>
 
-
+        */}
 
           <div className="article-input-container">
             <input

@@ -13,7 +13,7 @@ function CommentTextCard({ name, index }: CommentTextCardType) {
   const dispatch = useDispatch();
   return (
     <div
-      className="commentText-card-container"
+      className="commenttext-card-container"
       onClick={() => {
         dispatch(removeCommentText(index));
         dispatch(
