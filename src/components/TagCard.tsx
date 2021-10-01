@@ -8,9 +8,11 @@ import { v4 as uuid } from "uuid";
 interface TagCardType {
   name: string;
   index: number;
+  tagId: string;
+  description: string;
 }
 
-function TagCard({ name, index }: TagCardType) {
+function TagCard({ name, index, tagId, description }: TagCardType) {
   const dispatch = useDispatch();
   return (
     <div

@@ -7,9 +7,12 @@ import { v4 as uuid } from "uuid";
 interface ArticleTagCardType {
   name: string;
   index: number;
+  articleTagId: string; 
+  tagId: string;
+   articleId: string;
 }
 
-function ArticleTagCard({ name, index }: ArticleTagCardType) {
+function ArticleTagCard({ name, index, articleTagId, tagId, articleId }: ArticleTagCardType) {
   const dispatch = useDispatch();
   return (
     <div

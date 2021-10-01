@@ -7,9 +7,14 @@ import { v4 as uuid } from "uuid";
 interface CommentTextCardType {
   name: string;
   index: number;
+  commentTextId: string;
+  articleId: string;
+  authorId: string;
+  text: string;
+  dateCreated: string;
 }
 
-function CommentTextCard({ name, index }: CommentTextCardType) {
+function CommentTextCard({ name, index, commentTextId, articleId, authorId, text, dateCreated }: CommentTextCardType) {
   const dispatch = useDispatch();
   return (
     <div

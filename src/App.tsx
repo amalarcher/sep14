@@ -104,7 +104,7 @@ function App() {
             <h5 className="commentText-header">CommentTexts</h5>
             <div className="commentText-cards-container">
               {commentTexts.map((name, index) => {
-                return <CommentTextCard name={name} index={index} />;
+                return <CommentTextCard name={name} index={index} commentTextId='commentTextId' articleId='articleId' authorId='authorId' text='this is some text' dateCreated='09/29/2021'/>;
               })}
             </div>
           </div>
@@ -124,7 +124,7 @@ function App() {
             <h5 className="appuser-header">AppUsers</h5>
             <div className="appuser-cards-container">
               {appUsers.map((name, index) => {
-                return <AppUserCard name={name} index={index} />;
+                return <AppUserCard name={name} index={index} appUserName='appUserName' userLogin='userLogin' about='about'/>;
               })}
             </div>
           </div>
@@ -145,7 +145,7 @@ function App() {
             <h5 className="article-header">Articles</h5>
             <div className="article-cards-container">
               {articles.map((name, index) => {
-                return <ArticleCard name={name} index={index} />;
+                return <ArticleCard name={name} index={index} articleId='articleId' articleTitle='articleTitle' appUserId='12' thumbnailUrl='http://google.com' payload='json payload' dateCreated='09-30-2021'/>;
               })}
             </div>
           </div>
@@ -181,7 +181,7 @@ function App() {
             <h5 className="articleTag-header">ArticleTags</h5>
             <div className="articleTag-cards-container">
               {articleTags.map((name, index) => {
-                return <ArticleTagCard name={name} index={index} />;
+                return <ArticleTagCard name={name} index={index} articleTagId='articleTagId' tagId='tagId' articleId='articleId' />;
               })}
             </div>
           </div>
@@ -200,7 +200,7 @@ function App() {
             <h5 className="tag-header">Tags</h5>
             <div className="tag-cards-container">
               {tags.map((name, index) => {
-                return <TagCard name={name} index={index} />;
+                return <TagCard name={name} index={index} tagId='tagId' description='description' />;
               })}
             </div>
           </div>

@@ -7,9 +7,15 @@ import { v4 as uuid } from "uuid";
 interface ArticleCardType {
   name: string;
   index: number;
+  articleId: string;
+  articleTitle: string; 
+  appUserId: string; 
+  thumbnailUrl: string; 
+  payload: string; 
+  dateCreated: string;
 }
 
-function ArticleCard({ name, index }: ArticleCardType) {
+function ArticleCard({ name, index, articleId, articleTitle, appUserId, thumbnailUrl, payload, dateCreated }: ArticleCardType) {
   const dispatch = useDispatch();
   return (
     <div

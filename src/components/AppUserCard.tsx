@@ -7,9 +7,12 @@ import { v4 as uuid } from "uuid";
 interface AppUserCardType {
   name: string;
   index: number;
+  appUserName: string;
+  userLogin: string;
+  about: string;
 }
 
-function AppUserCard({ name, index }: AppUserCardType) {
+function AppUserCard({ name, index, appUserName, userLogin, about }: AppUserCardType) {
   const dispatch = useDispatch();
   return (
     <div
